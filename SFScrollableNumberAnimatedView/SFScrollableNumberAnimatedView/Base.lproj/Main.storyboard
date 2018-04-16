@@ -18,9 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCp-ZL-kex">
-                                <rect key="frame" x="152" y="427" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCp-ZL-kex">
+                                <rect key="frame" x="132.5" y="397" width="110" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="ADE-5c-qXT"/>
+                                    <constraint firstAttribute="height" constant="70" id="PIN-MK-4cH"/>
+                                </constraints>
                                 <state key="normal" title="Start Animation"/>
                                 <connections>
                                     <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqw-NM-6sJ"/>
@@ -28,11 +31,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GCp-ZL-kex" secondAttribute="bottom" constant="200" id="DrJ-wt-tPJ"/>
+                            <constraint firstItem="GCp-ZL-kex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g8d-ov-QzF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
